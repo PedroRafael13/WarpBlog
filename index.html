@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>WarpBlog</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>WarpBlog</h1>
+    </header>
+    <main class="main">
+      <!-- Formulário de postagem -->
+      <div class="newPost">
+        <div class="infoUser">
+          <div class="imgUser"></div>
+          <strong>Pedro Rafael</strong>
+        </div>
+
+        <form action="" class="formPost" id="formPost">
+          <textarea
+            name="textarea"
+            placeholder="Vamos mudar o mundo?"
+            id="textarea"
+          ></textarea>
+          <div class="iconsAndButton">
+            <div class="icons">
+              <button class="btnFileForm">
+                <img src="assets/assets/img.svg" alt="Adicionar uma imagem" />
+              </button>
+              <button class="btnFileForm">
+                <img src="assets/assets/gif.svg" alt="Adicionar um gif" />
+              </button>
+              <button class="btnFileForm">
+                <img src="assets/assets/video.svg" alt="Adicionar um vídeo" />
+              </button>
+            </div>
+
+            <button type="submit" id="botao" class="btnSubmitForm">
+              Publicar
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <ul class="posts" id="posts"></ul>
+    </main>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
